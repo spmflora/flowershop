@@ -12,7 +12,7 @@ import java.nio.file.Paths;
 public class FlowersFileRepository {
     private String IMAGES_FOLDER_PATH = "flowers/images/";
     public byte[] getImage(int id) throws IOException {
-        String fileExtension = ".jpeg";
+        String fileExtension = ".jpg";
         Path path = Paths.get(IMAGES_FOLDER_PATH
                 + id + fileExtension);
         byte[] image = Files.readAllBytes(path);
